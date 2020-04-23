@@ -27,7 +27,7 @@ body {
 	justify-content: left;
 	align-items: center;
 	position: relative;
-	overflow: scroll;
+	overflow-y: scroll;
 }
 
 #trslt {
