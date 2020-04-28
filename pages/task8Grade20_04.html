@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Таблица задний для учеников. Здесь можно быстро узнать своё задание и продолжить заниматься. Успехов в учёбе!">
+	<meta name="keywords" content="index, главная страница, таблица, домашних, заданий, для, учеников, aptp, main, page, action, plan, template, for, pupils">
+	<!-- Links -->
+	<link rel="stylesheet" href="../examples/simple.css">
+	<link rel="stylesheet" href="../styles/styleTablePage.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800;900&display=swap" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+	<link rel="manifest" href="../favicons/site.webmanifest">
+	<link rel="mask-icon" href="../favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<script src="https://kit.fontawesome.com/64047efea4.js" crossorigin="anonymous"></script>
+	<title>Таблица заданий | 8-ой Класс | 20.04-24.04</title>
+	<script src="../jScripts/header.js"></script>
+	<script src="../jScripts/tableHintText.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="headerContent">
+					<div class="logTitle">
+						<a href="../index.html" class ="indexLink"><img class="logo" src="../images/icons8-template-64.png" alt="logo"></a>
+						<h1><a href="../index.html" class ="indexLink">APTP</a></h1>
+					</div>
+				<div class="contMenu">
+					<ul>
+						<li><a href="news.html">NEWS</a></li>
+						<li><a href="notReady.html">ABOUT US</a></li>
+						<li><a href="#">MENU ▼</a>
+							<ul>
+								<li><a class="subPrgph" href="#">CLASSES</a>
+									<ul><li><a href="task8Grade27_04.html">8th Grade</a></li></ul>
+								</li>
+								<li><a href="archive.html">ARCHIVE</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="socialRefs">
+					<div class="hexagon"><a href="https://vk.com/skryt2015" target="_blank"><i class="fa fa-vk"></i></a></div>
+					<div class="hexagon"><a href="http://wa.me/79514580139" target="_blank"><i class="fab fa-whatsapp"></i></a></div>
+					<div class="hexagon"><a href="https://twitter.com/Danil58838171" target="_blank"><i class="fab fa-twitter"></i></a></div>
+				</div>
+			</div>
+			<div class="subHeaderContent">
+				<div class="contMenu">
+					<ul>
+						<li><a href="news.html">NEWS</a></li>
+						<li><a href="notReady.html">ABOUT US</a></li>
+						<li><a id="menuAfterContent" onclick="butClickMenu()" href="#">MENU ▼</a>
+							<ul id="menuClick">
+								<li><a id="submenuAfterContent" onclick="butClickSubmenu()" href="#">◄ CLASSES</a>
+									<ul id="submenuClick"><li><a href="task8Grade27_04.html">8th Grade</a></li></ul>
+								</li>
+								<li><a href="archive.html">ARCHIVES</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="pcWrapper">
+		<main>
+			<div class="boxTabHW">
+				<table class="tabHW">
+					<thead>
+						<tr>
+							<th>Название предмета</th>
+							<th>20.04</th>
+							<th>21.04</th>
+							<th>22.04</th>
+							<th>23.04</th>
+							<th>24.04</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Математика</td>
+							<td title="Не определено/Не задано" class="yes"><a onclick="showHintText()" href="#undefine">Есть</a></td>
+							<td title="Не определено/Не задано" class="yes"><a onclick="showHintText()" href="#undefine">Есть</a></td>
+							<td title="Не определено/Не задано" class="yes"><a onclick="showHintText()" href="#undefine">Есть</a></td>
+							<td title="Не определено/Не задано" class="yes"><a onclick="showHintText()" href="#undefine">Есть</a></td>
+							<td title="Не определено/Не задано" class="yes"><a onclick="showHintText()" href="#undefine">Есть</a></td>
+						</tr>
+						<tr>
+							<td>Физика</td>
+							<td class="no">Нет</td>
+							<td class="no">Нет</td>
+							<td class="yes" title="Реферат на тему «Работа и мощность тока. Закон Джоуля-Ленца»"><a onclick="showHintText()" href="#taskPhysics">Есть</a></td>
+							<td class="yes" title="Реферат на тему «Работа и мощность тока. Закон Джоуля-Ленца»"><a onclick="showHintText()" href="#taskPhysics">Есть</a></td>
+							<td class="no">Нет</td>
+						</tr>
+						<tr>
+							<td>Химия</td>
+							<td class="no">Нет</td>
+							<td class="yes" title="Не определено/Не задано"><a onclick="showHintText()" href="#undefine">Есть</a></td>
+							<td class="no">Нет</td>
+							<td class="no">Нет</td>
+							<td class="yes" title="Не определено/Не задано"><a onclick="showHintText()" href="#undefine">Есть</a></td>
+						</tr>
+						<tr>
+							<td>Физическая Культура</td>
+							<td class="no">Нет</td>
+							<td class="yes" title="Тест"><a href="testPE.html">Есть</a></td>
+							<td class="yes" title="Тест"><a href="testPE.html">Есть</a></td>
+							<td class="yes" title="Тест"><a href="testPE.html">Есть</a></td>
+							<td class="no">Нет</td>
+						</tr>
+						<tr>
+							<td>Русский Язык</td>
+							<td class="yes" title="Страница 200 №352"><a onclick="showHintText()" href="#taskRusLang1">Есть</a></td>
+							<td class="yes" title="Страница 200 №353"><a onclick="showHintText()" href="#taskRusLang2">Есть</a></td>
+							<td class="yes" title="Страница 201 №354"><a onclick="showHintText()" href="#taskRusLang3">Есть</a></td>
+							<td class="no">Нет</td>
+							<td class="yes" title="Страница 201 №355"><a onclick="showHintText()" href="#taskRusLang4">Есть</a></td>
+						</tr>
+						<tr>
+							<td>ОБЖ</td>
+							<td class="no">Нет</td>
+							<td class="no">Нет</td>
+							<td class="no">Нет</td>
+							<td class="yes" title="Тема «Вредные привычки и их профилактика». Реферат"><a onclick="showHintText()" href="#taskLSF">Есть</a></td>
+							<td class="no">Нет</td>
+						</tr>
+						<tr>
+							<td>Технология</td>
+							<td class="no">Нет</td>
+							<td class="no">Нет</td>
+							<td class="no">Нет</td>
+							<td class="no">Нет</td>
+							<td class="yes" title="Инструментарий для работы в саду. Агротехнические требования к почве и её подготовка к высадке культур. Конспект"><a onclick="showHintText()" href="#taskTechnology">Есть</a></td>
+						</tr>
+						<tr>
+							<td>Информатика</td>
+							<td class="no">Нет</td>
+							<td class="no">Нет</td>
+							<td class="no">Нет</td>
+							<td class="yes" title="Конспект по теме «Алгоритмы и программирование»"><a onclick="showHintText()" href="#taskInformatics">Есть</a></td>
+							<td class="no">Нет</td>
+						</tr>
+						<tr>
+							<td>Английский Язык</td>
+							<td class="yes" title="Страница 32 №10"><a onclick="showHintText()" href="#taskEngLang1">Есть</a></td>
+							<td class="no">Нет</td>
+							<td class="no">Нет</td>
+							<td class="yes" title="Страница 32 №11"><a onclick="showHintText()" href="#taskEngLang2">Есть</a></td>
+							<td class="no">Нет</td>
+						</tr>
+						<tr>
+							<td>Литература</td>
+							<td class="no">Нет</td>
+							<td class="no">Нет</td>
+							<td class="no">Нет</td>
+							<td class="yes" title="Прочитать В. Астафьев «Фотография, на которой меня нет»"><a onclick="showHintText()" href="#taskLiterature1">Есть</a></td>
+							<td class="yes" title="Страница 220 Вопрос №2"><a onclick="showHintText()" href="#taskLiterature2">Есть</a></td>
+						</tr>
+						<tr>
+							<td>История</td>
+							<td class="yes" title="§22 Изучить. Конспект"><a onclick="showHintText()" href="#taskHistory1">Есть</a></td>
+							<td class="yes" title="§23 Изучить. Конспект"><a onclick="showHintText()" href="#taskHistory2">Есть</a></td>
+							<td class="no">Нет</td>
+							<td class="no">Нет</td>
+							<td class="no">Нет</td>
+						</tr>
+						<tr>
+							<td>География</td>
+							<td class="no">Нет</td>
+							<td class="yes" title="§41 Конспект"><a onclick="showHintText()" href="#taskGeography">Есть</a></td>
+							<td class="no">Нет</td>
+							<td class="no">Нет</td>
+							<td class="yes" title="§41 Конспект"><a onclick="showHintText()" href="#taskGeography">Есть</a></td>
+						</tr>
+						<tr>
+							<td>Обществознание</td>
+							<td class="yes" title="§21 Страница 179 Составить схему. Страницы 180-183 Конспект"><a onclick="showHintText()" href="#taskSocStudies">Есть</a></td>
+							<td class="no">Нет</td>
+							<td class="no">Нет</td>
+							<td class="no">Нет</td>
+							<td class="no">Нет</td>
+						</tr>
+						<tr>
+							<td>Биология</td>
+							<td class="yes" title="Не определено/Не задано"><a onclick="showHintText()" href="#undefine">Есть</a></td>
+							<td class="no">Нет</td>
+							<td class="yes" title="Не определено/Не задано"><a onclick="showHintText()" href="#undefine">Есть</a></td>
+							<td class="no">Нет</td>
+							<td class="no">Нет</td>
+						</tr>
+						<tr>
+							<td>ОДНКНР</td>
+							<td class="no">Нет</td>
+							<td class="yes" title="Тест"><a href="testOdnknr.html">Есть</a></td>
+							<td class="no">Нет</td>
+							<td class="no">Нет</td>
+							<td class="no">Нет</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</main>
+		<div id="hintText">
+			<!-- Не определено -->
+			<p id="undefine">Undefined</p>
+			<!-- Задание Физика -->
+			<p id="taskPhysics">Реферат на тему «Работа и мощность тока. Закон Джоуля-Ленца»</p>
+			<!-- Задание Русский Язык -->
+			<p id="taskRusLang1">Страница 200 №352</p>
+			<p id="taskRusLang2">Страница 200 №353</p>
+			<p id="taskRusLang3">Страница 201 №354</p>
+			<p id="taskRusLang4">Страница 201 №355</p>
+			<!-- Задание ОБЖ -->
+			<p id="taskLSF">Тема «Вредные привычки и их профилактика». Реферат</p>
+			<!-- Задание Технология -->
+			<p id="taskTechnology">Инструментарий для работы в саду. Агротехнические требования к почве и её подготовка к высадке культур. Конспект</p>
+			<!-- Задание Информатика -->
+			<p id="taskInformatics">Конспект по теме «Алгоритмы и программирование»</p>
+			<!-- Задание Английский Язык -->
+			<p id="taskEngLang1">Страница 32 №10</p>
+			<p id="taskEngLang2">Страница 32 №11</p>
+			<!-- Задание Литература -->
+			<p id="taskLiterature1">Прочитать В. Астафьев «Фотография, на которой меня нет»</p>
+			<p id="taskLiterature2">Страница 220 Вопрос №2</p>
+			<!-- Задание История -->
+			<p id="taskHistory1">§22 Изучить. Конспект</p>
+			<p id="taskHistory2">§23 Изучить. Конспект</p>
+			<!-- Задание География -->
+			<p id="taskGeography">§41 Конспект</p>
+			<!-- Задание Обществознаине -->
+			<p id="taskSocStudies">§21 Страница 179 Составить схему. Страницы 180-183 Конспект</p>
+	
+			<img onclick="delHintText()" src="../images/icons8-close-window-48.png" alt="delete">
+		</div>
+	</div>
+	<div class="mobile-wrapper">
+		<ul class="navi">
+			<li class="navi_item, unready">
+				<a href="#maths" class="navi_item-link">Математика</a>
+				<div id="maths" class="navi_submenu">
+				</div>
+			</li>
+			<li class="navi_item">
+				<a onclick="openPhysics()" class="navi_item-link">Физика</a>
+				<div id="physics" class="navi_submenu">
+				<a class="navi_submenu-link">Реферат на тему «Работа и мощность тока. Закон Джоуля-Ленца»</a>
+				</div>
+			</li>
+			<li class="navi_item, unready">
+				<a href="#chemistry" class="navi_item-link">Химия</a>
+				<div id="chemistry" class="navi_submenu">
+				</div>
+			</li>
+			<li class="navi_item">
+				<a onclick="openPE()" class="navi_item-link">Физическая культура</a>
+				<div id="pe" class="navi_submenu">
+				<a href="testPE.html" class="navi_submenu-link">Тест</a>
+				</div>
+			</li>
+			<li class="navi_item">
+				<a onclick="openRusLang()" class="navi_item-link">Русский Язык</a>
+				<div id="rl" class="navi_submenu">
+				<a class="navi_submenu-link">Страница 200 №352</a>
+				<a class="navi_submenu-link">Страница 200 №353</a>
+				<a class="navi_submenu-link">Страница 201 №354</a>
+				<a class="navi_submenu-link">Страница 201 №355</a>
+				</div>
+			</li>
+			<li class="navi_item">
+				<a onclick="openLSF()" class="navi_item-link">ОБЖ</a>
+				<div id="lsf" class="navi_submenu">
+				<a class="navi_submenu-link">Тема «Вредные привычки и их профилактика». Реферат</a>
+				</div>
+			</li>
+			<li class="navi_item">
+				<a onclick="openTechnology()" class="navi_item-link">Технология</a>
+				<div id="technology" class="navi_submenu">
+				<a class="navi_submenu-link">Инструментарий для работы в саду. Агротехнические требования к почве и её подготовка к высадке культур.</a>
+				</div>
+			</li>
+			<li class="navi_item">
+				<a onclick="openInformatics()" class="navi_item-link">Информатика</a>
+				<div id="informatics" class="navi_submenu">
+				<a class="navi_submenu-link">Конспект по теме «Алгоритмы и программирование»</a>
+				</div>
+			</li>
+			<li class="navi_item">
+				<a onclick="openEngLang()" class="navi_item-link">Английский язык</a>
+				<div id="el" class="navi_submenu">
+				<a class="navi_submenu-link">Страница 32 №10</a>
+				<a class="navi_submenu-link">Страница 32 №11</a>
+				</div>
+			</li>
+			<li class="navi_item">
+				<a onclick="openLiterature()" class="navi_item-link">Литература</a>
+				<div id="literature" class="navi_submenu">
+				<a class="navi_submenu-link">Прочитать В. Астафьев «Фотография, на которой меня нет»</a>
+				<a class="navi_submenu-link">Странница 220 Вопрос №2</a>
+				</div>
+			</li>
+			<li class="navi_item">
+				<a onclick="openHistory()" class="navi_item-link">История</a>
+				<div id="history" class="navi_submenu">
+				<a class="navi_submenu-link">§22 Изучить. Конспект</a>
+				<a class="navi_submenu-link">§23 Изучить. Конспект</a>
+				</div>
+			</li>
+			<li class="navi_item">
+				<a onclick="openGeography()" class="navi_item-link">География</a>
+				<div id="geography" class="navi_submenu">
+				<a class="navi_submenu-link">§41 Конспект</a>
+				</div>
+			</li>
+			<li class="navi_item">
+				<a onclick="openSocStudies()" class="navi_item-link">Обществознание</a>
+				<div id="sd" class="navi_submenu">
+				<a class="navi_submenu-link">§21 Страница 179 Составить схему. Страницы 180-183 Конспект</a>
+				</div>
+			</li>
+			<li class="navi_item, unready">
+				<a class="navi_item-link">Биология</a>
+				<div id="biology" class="navi_submenu">
+				</div>
+			</li>
+			<li class="navi_item">
+				<a onclick="openFSMCPR()" class="navi_item-link">ОДНКНР</a>
+				<div id="odnknr" class="navi_submenu">
+				<a href="testOdnknr.html" class="navi_submenu-link">Тест</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+	</div>
+</body>
+</html>

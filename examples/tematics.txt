@@ -1,0 +1,18 @@
+	background: rgb(255,255,255);
+
+	background: radial-gradient(circle, rgba(255,255,255,1) 15%, rgba(254,250,138,1) 21%,
+	rgba(222,154,21,1) 60%, rgba(165,89,2,1) 93%) top left;
+
+	background: rgb(240,240,240);
+	background: linear-gradient(157deg, rgba(240,240,240,1) 6%, rgba(42,182,136,1) 70%);
+
+	background: linear-gradient(-45deg, #e8070d -50%, #0b01a5 150%);
+
+		background: linear-gradient(-45deg, #e8070d -50%, #0b01a5 150%);
+
+	background: rgb(76,198,186);
+	background: radial-gradient(circle, rgba(76,198,186,1) 26%, rgba(42,149,140,1) 75%, rgba(14,105,96,1) 100%);
+	#a55902
+	#de9a15
+	#fefa8a
+	#fff

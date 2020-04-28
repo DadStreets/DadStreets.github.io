@@ -1,0 +1,65 @@
+main {
+	display: flex;
+	justify-content: center;
+}
+
+main .tableArch {
+	border-spacing: 0;
+	width: 80%;
+}
+
+.tableArch thead th {
+	border-bottom: 1px solid #fff;
+	color: #f0f0f0;
+	padding: 10px 4px;
+	font-size: 2.4em;
+	text-align: left;
+}
+
+.tableArch tbody td {
+	border-bottom: 1px solid #f0f0f0;
+	background: rgba(0,112,90,.6);
+}
+
+.tableArch tbody td a {
+	color: #fff;
+	font-size: 2em;
+	text-decoration: none;
+	display: block;
+	padding: 15px 0px 15px 30px;
+}
+
+main .tableNews {
+	border-spacing: 0;
+	width: 60%;
+}
+
+.tableNews thead th {
+	border-bottom: 1px solid #fff;
+	color: #f0f0f0;
+	padding: 10px 4px;
+	font-size: 2.4em;
+	text-align: left;
+}
+
+.tableNews tbody td {
+	border-bottom: 1px solid #f0f0f0;
+	color: #fff;
+	font-size: 2em;
+	text-decoration: none;
+	background: rgba(62,67,56,.45);
+	display: block;
+	padding: 15px 0px 15px 20px;
+}
+
+/* Smartphones and Tablet */
+
+@media (max-width: 768px) {
+	main .tableNews {
+		width: 90%;
+	}
+
+	main * {
+		font-size: 8pt;
+	}
+}

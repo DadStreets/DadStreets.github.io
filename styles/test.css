@@ -1,0 +1,60 @@
+.wrapper {
+	width: 100%;
+	min-height: 100vh;
+}
+
+.wrapper main.testObject {
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+	position: relative;
+}
+
+#trslt {
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	font-size: 2em;
+	color: white;
+	text-decoration: none;
+	background: #009879;
+	padding: 0 10px;
+	border-bottom: 5px solid #008066;
+	transition: .15s;
+}
+
+#trslt:active {
+	border-bottom: none;
+	top: 16px;
+}
+
+.test {
+	width: 960px;
+	height: calc(100vh - 60px);
+	background: #f0f0f0;
+	padding: 40px;
+	overflow-y: scroll;
+}
+
+.test li p:nth-child(4) {
+	margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+	.test {
+		height: calc(100vh - 100px);
+	}
+
+	#trslt {
+		left: auto;
+		right: 30px;
+	}
+}
+
+@media (max-width: 420px) {
+	.test {
+		height: calc(100vh - 120px);
+	}
+}

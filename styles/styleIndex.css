@@ -1,0 +1,431 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12pt;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+	background: rgb(2,178,123);
+	background: radial-gradient(circle, rgba(2,178,123,1) 25%, rgba(1,119,82,1) 100%);
+}
+
+.wrapper { 
+	max-width: 100%;
+	height: 100vh;
+	background: linear-gradient(0deg, rgba(240,240,240,.5) 0%, transparent 40%);
+}
+
+/* Header Style */
+
+header {
+	top: 20px;
+	width: 100%;
+	height: 60px;
+	background: rgba(46, 44, 42, .3);
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.headerContent {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 95%;
+	height: 100%;
+	position: relative;
+	top: 0;
+}
+
+.subHeaderContent {
+	display: none;
+	justify-content: space-around;
+	align-items: center;
+	width: 95%;
+	height: 60px;
+	position: relative;
+	top: 0;
+}
+
+.logTitle {
+	display: flex;
+	align-items: center;
+}
+
+.logTitle .logo {
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+}
+
+.logTitle h1 a {
+	font-weight: 300;
+	font-size: 2.5em;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.indexLink {
+	text-decoration: none;
+	display: block;
+}
+
+/* Nav-Menu style */
+
+.contMenu {
+	position: relative;
+	height: 100%;
+	font-weight: 500;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 34;
+}
+
+.contMenu > ul {
+	list-style: none;
+	justify-content: center;
+	display: flex;
+	height: 100%;
+}
+
+.contMenu > ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.16em;
+	padding: 12px 9px;
+	text-transform: uppercase;
+	display: block;
+	height: 100%;
+	line-height: 36px;
+}
+
+.contMenu > ul li a.menu:after {
+	content: ' ▼';
+}
+
+.contMenu > ul li {
+	position: relative;
+	height: 100%;
+}
+
+.contMenu li ul {
+	position: absolute;
+	list-style: none;
+	display: none;
+	min-width: 10rem;
+}
+
+.contMenu li:hover > ul {
+	display: block;
+}
+
+.headerContent .contMenu > ul li:hover > a.menu:after {
+	content: ' ▲';
+}
+
+.contMenu li > ul li {
+	border-bottom: 1px solid rgba(0,0,0,.25);
+	background: rgba(0,0,0,.1);
+}
+
+a.subPrgph:after {
+	content: ' ►';
+}
+
+.contMenu li > ul li:hover a.subPrgph:after {
+	content: ' ◄';
+}
+
+.contMenu li > ul li a {
+	padding: 10px;
+	text-align: center;
+}
+
+.contMenu li > ul li ul {
+	position: absolute;
+	right: -100%;
+	top: 0;
+}
+
+/* ---------- */
+
+.socialRefs {
+	display: flex;
+	justify-content: space-around;
+	width: 150px;
+}
+
+.hexagon {
+	width: 20px;
+	height: 34px;
+	position: relative;
+	top: 1px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hexagon a {
+	position: absolute;
+	color: #fff;
+	padding: 10px;
+	z-index: 2;
+}
+
+.hexagon a i {
+	transition: color .3s;
+}
+
+.hexagon .fa-whatsapp {
+	font-size: 1.25em;
+}
+
+.hexagon:nth-child(2):hover:after, 
+.hexagon:nth-child(2):hover:before,
+.hexagon:nth-child(2):hover,
+.hexagon:nth-child(2):hover .fa-whatsapp {
+	border-color: #3FDF00; 
+	color: #3FDF00;
+	box-shadow: 0 0 20px #3FDF00;
+}
+
+.hexagon:nth-child(1):hover:after,
+.hexagon:nth-child(1):hover:before,
+.hexagon:nth-child(1):hover,
+.hexagon:nth-child(1):hover .fa-vk {
+	border-color: #0230C6; 
+	color: #0230C6;
+	box-shadow: 0 0 10px #0230C6;
+}
+
+.hexagon:nth-child(3):hover:after,
+.hexagon:nth-child(3):hover:before,
+.hexagon:nth-child(3):hover,
+.hexagon:nth-child(3):hover .fa-twitter {
+	border-color: #00E7EF; 
+	box-shadow: 0 0 20px #00E7EF;
+	color: #00E7EF;
+}
+
+.hexagon:after,
+.hexagon:before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: -2px;
+}
+
+.hexagon:after {
+	transform: rotate(60deg);
+}
+
+.hexagon:before {
+	transform: rotate(120deg);
+}
+
+.hexagon,
+.hexagon:after,
+.hexagon:before {
+	background: transparent;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	transition: border-color, box-shadow .3s;
+}
+
+/* Main Style */
+
+main {
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	top: 200px;
+	left: 5%;
+	height: 360px;
+	transition: top .5s;
+}
+
+.teskBox .tagline {
+	text-transform: uppercase;
+	position: relative;
+	color: #f0f0f0;
+	font-weight: 900;
+	font-size: 2.6em;
+	line-height: 48pt;
+	margin-bottom: 28px;
+}
+
+.teskBox .getTask {
+	position: relative;
+	text-transform: uppercase;
+	width: 200px;
+	height: 56px;
+	text-align: center;
+	line-height: 56px;
+	display: block;
+	background: #f0f0f0;
+	color: #01976b;
+	border-radius: 89px;
+	text-decoration: none;
+	font-weight: 800;
+	font-size: 1.5em;
+	box-shadow: 10px 5px 10px rgba(0,0,0,.3);
+}
+
+/* Main-Table style */
+
+.exTable table {
+	width: 440px;
+	height: 220px;
+	background: #f0f0f0;
+	border-top-left-radius: 32px;
+	border-top-right-radius: 32px; 
+	border-spacing: 0;
+	overflow: hidden;
+	transition: height, width .3s;
+
+}
+
+.exTable table tr td.darkCell {
+	background: #E6E6E6;
+}
+
+.exTable table tr:nth-child(1) {
+	background: #16ffc0;
+}
+
+
+
+@media (min-height: 880px) {
+	main {
+		top: 300px;
+	}
+}
+
+/* Notebook and other - 1024px */
+
+@media (max-width: 1024px) {
+
+	main {
+		top: 160px;
+	}
+
+	.exTable table {
+		width: 400px;
+		height: 200px;
+	}
+
+	.teskBox .tagline {
+		font-size: 2em;
+	}
+}
+
+
+/* Smartphones max-width - 768px */
+
+@media (max-width: 768px) {
+
+	.contMenu li:hover > ul {
+		display: none;
+	}
+
+	.subHeaderContent {
+		display: flex;
+		height: 40px;
+	}
+
+	.headerContent .contMenu {
+		display: none;
+	}
+	
+	.exTable table {
+		width: 420px;
+		height: 200px;
+	}
+
+	* {
+		font-size: 10pt;
+	}
+
+	.contMenu > ul li a {
+		line-height: 16px;
+	}	
+
+	.headerContent {
+		height: 60px;
+	}
+
+	header {
+		height: 100px;
+		flex-direction: column;
+	}
+
+	.contMenu li > ul li ul {
+		right: 100%;
+	}
+
+	.contMenu li > ul li a {
+		padding: 20px;
+	}
+
+	main {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.teskBox {
+		order: 2;
+	}
+}
+
+/* Smartphones max-width - 420px */
+
+@media (max-width: 420px) {
+	.exTable table {
+		width: 320px;
+		height: 180px;
+	}
+
+	header {
+		top: 0;
+		height: 120px;
+	}
+
+	.subHeaderContent {
+		height: 60px;
+	}
+
+	.contMenu > ul li a {
+		line-height: 36px;
+	}	
+
+	.contMenu li > ul li a {
+		padding: 10px;
+	}
+
+	* {
+		font-size: 9pt;
+	}
+
+	.teskBox .tagline {
+		line-height: 28pt;
+	}
+
+	.teskBox .tagline {
+		margin: 20px 0;
+	}
+}
+
+@media (max-width: 320px) {
+	.exTable table {
+		width: 260px;
+		height: 150px;
+	}
+}
