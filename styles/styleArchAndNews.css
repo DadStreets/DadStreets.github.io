@@ -34,7 +34,7 @@ main .tableNews {
 	width: 60%;
 }
 
-.tableNews thead th {
+.tableNews th {
 	border-bottom: 1px solid #fff;
 	color: #f0f0f0;
 	padding: 10px 4px;
@@ -42,7 +42,7 @@ main .tableNews {
 	text-align: left;
 }
 
-.tableNews tbody td {
+.tableNews td {
 	border-bottom: 1px solid #f0f0f0;
 	color: #fff;
 	font-size: 2em;
