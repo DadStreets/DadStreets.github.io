@@ -27,7 +27,7 @@ function openMaths() {
 		document.getElementById("maths").style.maxHeight = "0";
 		numTapMaths = 0;
 	} else {
-		document.getElementById("maths").style.maxHeight = "20rem";
+		document.getElementById("maths").style.maxHeight = "30rem";
 		numTapMaths = 1;
 	}
 }
@@ -72,7 +72,7 @@ function openRusLang() {
 		document.getElementById("rl").style.maxHeight = "0";
 		numTapRusLang = 0;
 	} else {
-		document.getElementById("rl").style.maxHeight = "20rem";
+		document.getElementById("rl").style.maxHeight = "30rem";
 		numTapRusLang = 1;
 	}
 }
