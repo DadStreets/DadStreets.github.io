@@ -25,6 +25,10 @@
 	transition: .15s;
 }
 
+#trslt:hover {
+	cursor: pointer;
+}
+
 #trslt:active {
 	border-bottom: none;
 	top: 16px;
