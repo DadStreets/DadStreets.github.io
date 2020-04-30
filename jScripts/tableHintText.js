@@ -27,7 +27,7 @@ function openMaths() {
 		document.getElementById("maths").style.maxHeight = "0";
 		numTapMaths = 0;
 	} else {
-		document.getElementById("maths").style.maxHeight = "30rem";
+		document.getElementById("maths").style.maxHeight = "50rem";
 		numTapMaths = 1;
 	}
 }
